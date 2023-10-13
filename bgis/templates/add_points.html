@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Points</title>
+</head>
+<body>
+    <h1>Add Points to a Team</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Add Points">
+    </form>
+
+    <a href="">Back to Success Page</a>
+</body>
+</html>
